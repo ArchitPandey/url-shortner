@@ -13,6 +13,9 @@ This is a basic implementation of URL Shortner (like tinyUrl). This implementati
     - mysql -h my-mysql -p (enter-pwd when prompted)
 - id-generator service
   - clone https://github.com/ArchitPandey/unique-id-generator.git
-  - kubectl apply ./svc-spec.yml and then ./statefulset-spec.yml files in project root to create cluster-ip service and stateful-set
+  - kubectl apply -f ./svc-spec.yml - to create clusterip service
+  - kubectl apply -f ./statefulset-spec.yml - to create stateful-set
 - url-shortner
-  - create node-port (./svc-spec.yml) service and then deployment (./deployment-spec.yml) 
+  - clone https://github.com/ArchitPandey/url-shortner 
+  - kubectl apply -f ./svc-spec.yml - to create nodeport service
+  - kubectl apply -f ./deployment-spec.yml - to create deployment 
