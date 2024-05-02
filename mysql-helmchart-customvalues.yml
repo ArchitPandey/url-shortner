@@ -1,0 +1,5 @@
+persistence.size: 2Gi
+mysqlRootPassword: Admin@123
+mysqlUser: URLSHRTNR
+mysqlPassword: URLSHRTNR@123
+mysqlDatabase: url-shortner

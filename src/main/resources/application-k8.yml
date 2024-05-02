@@ -1,0 +1,25 @@
+# profile when app is run in k8s cluster
+spring:
+  application:
+    name: url-shortner
+
+#app related config
+app:
+  svc-name: url-shortner
+  namespace: default
+
+#external services
+id-generator:
+  svc-name: id-generator-svc
+  namespace: default
+  host: <<not needed>>
+  port: <<not needed>>
+  generate-id-api: /api/v1/id
+
+mysql:
+  svc-name: my-mysql
+  namespace: default
+  host: <<not needed>>
+  port: <<not needed>>
+  user: root
+  db-name: url-shortner

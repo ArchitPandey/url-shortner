@@ -1,0 +1,20 @@
+#app related config
+app:
+  svc-name: url-shortner
+  namespace: default
+
+#external services
+id-generator:
+  svc-name: id-generator-svc
+  namespace: <<not needed>>
+  host: localhost
+  port: 8081
+  generate-id-api: /api/v1/id
+
+mysql:
+  svc-name: my-mysql
+  host: localhost
+  port: 3306
+  user: root
+  password: Admin@123
+  db-name: url-shortner
